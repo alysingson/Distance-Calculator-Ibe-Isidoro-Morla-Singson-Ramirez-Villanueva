@@ -1,19 +1,21 @@
-Distance Calculator
-Description
-This Python program calculates the distance between two points using the distance formula.
-How to Run
-Open the Python file in a Python editor.
-Run the program.
-Enter the x and y coordinates when asked.
-Input Needed
-The program needs four values:
-x1
-y1
-x2
-y2
-Sample Output
-Enter x1: 1
-Enter y1: 2
-Enter x2: 4
-Enter y2: 6
-The distance between the two points is: 5.0
+# Distance-Calculator-Ibe-Isidoro-Morla-Singson-Ramirez-Villanueva
+# Distance Calculator
+# This program calculates the distance between two points.
+
+import math
+
+# Get the coordinates of the two points from the user
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+# Calculate the differences between the coordinates
+x_difference = x2 - x1
+y_difference = y2 - y1
+
+# Apply the distance formula
+distance = math.sqrt(x_difference ** 2 + y_difference ** 2)
+
+# Display the result
+print("The distance between the two points is:", distance)
